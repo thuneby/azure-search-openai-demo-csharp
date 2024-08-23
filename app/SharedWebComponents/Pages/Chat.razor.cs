@@ -42,7 +42,7 @@ public sealed partial class Chat
         try
         {
             var history = _questionAndAnswerMap
-                .Where(x => x.Value?.Choices is { Length: > 0})
+                .Where(x => x.Value?.Choices is { Length: > 0 })
                 .SelectMany(x => new ChatMessage[] { new ChatMessage("user", x.Key.Question), new ChatMessage("assistant", x.Value!.Choices[0].Message.Content) })
                 .ToList();
 

@@ -1,4 +1,4 @@
-﻿@page "/"
+﻿@page "/old"
 
 <PageTitle>Home</PageTitle>
 
@@ -20,7 +20,7 @@
         </CardHeaderContent>
     </MudCardHeader>
     <MudCardContent>
-        <MudCarousel Class="mud-width-full"
+@*         <MudCarousel Class="mud-width-full"
                      BulletsColor="Color.Primary" Style="height: 58vh;"
                      AutoCycle="true" TData="Image" Context="image"
                      ItemsSource=@_images AutoCycleTime=@TimeSpan.FromSeconds(3)>
@@ -30,7 +30,7 @@
                               Alt=@($"{image.Alt} (generated with Bing Create).") Class="rounded-lg mx-auto my-auto" />
                 </div>
             </ItemTemplate>
-        </MudCarousel>
+        </MudCarousel> *@
         <div class="full-width pt-6 text-align-center">
             <MudText Typo="Typo.caption">
                 These photo were created using generative AI
