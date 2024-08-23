@@ -20,7 +20,7 @@ param tags string = ''
 param openAiResourceGroupLocation string
 
 @description('Name of the chat GPT model. Default: gpt-35-turbo')
-@allowed([ 'gpt-35-turbo', 'gpt-4', 'gpt-4o', 'gpt-35-turbo-16k', 'gpt-4-16k' ])
+@allowed([ 'gpt-35-turbo', 'gpt-4', 'gpt-4o', 'gpt-35-turbo-16k', 'gpt-4-16k', 'gpt-4o-mini' ])
 param azureOpenAIChatGptModelName string = 'gpt-35-turbo'
 
 param azureOpenAIChatGptModelVersion string ='0613'
@@ -128,7 +128,7 @@ param searchServiceResourceGroupLocation string = location
 param searchServiceResourceGroupName string = ''
 
 @description('SKU name for the Azure AI Search service. Default: standard')
-param searchServiceSkuName string = 'standard'
+param searchServiceSkuName string = 'basic'
 
 @description('Name of the storage account')
 param storageAccountName string = ''
